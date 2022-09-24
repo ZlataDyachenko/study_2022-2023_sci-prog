@@ -1,36 +1,33 @@
 ---
-## Front matter
+# Front matter
 title: "Отчет по выполнению 1 этапа индивидуального проекта"
 subtitle: "Дисциплина: Научное программирование"
 author: "Выполнила Дяченко Злата Константиновна, НПМмд-02-22"
 
-## Generic otions
+# Generic otions
 lang: ru-RU
 toc-title: "Содержание"
 
+# Bibliography
 
-
-## Pdf output format
+# Pdf output format
 toc: true # Table of contents
-toc-depth: 2
+toc_depth: 2
 lof: true # List of figures
 lot: true # List of tables
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
 documentclass: scrreprt
-## I18n polyglossia
+## I18n
 polyglossia-lang:
   name: russian
   options:
-   - spelling=modern
-   - babelshorthands=true
+  - spelling=modern
+  - babelshorthands=true
 polyglossia-otherlangs:
   name: english
-## I18n babel
-babel-lang: russian
-babel-otherlangs: english
-## Fonts
+### Fonts
 mainfont: PT Serif
 romanfont: PT Serif
 sansfont: PT Sans
@@ -49,21 +46,25 @@ biblatexoptions:
   - language=auto
   - autolang=other*
   - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
-  - \usepackage{indentfirst}
+  - \linepenalty=10 # the penalty added to the badness of each line within a paragraph (no associated penalty node) Increasing the value makes tex try to have fewer lines in the paragraph.
+  - \interlinepenalty=0 # value of the penalty (node) added after each line of a paragraph.
+  - \hyphenpenalty=50 # the penalty for line breaking at an automatically inserted hyphen
+  - \exhyphenpenalty=50 # the penalty for line breaking at an explicit hyphen
+  - \binoppenalty=700 # the penalty for breaking a line at a binary operator
+  - \relpenalty=500 # the penalty for breaking a line at a relation
+  - \clubpenalty=150 # extra penalty for breaking after first line of a paragraph
+  - \widowpenalty=150 # extra penalty for breaking before last line of a paragraph
+  - \displaywidowpenalty=50 # extra penalty for breaking before last line before a display math
+  - \brokenpenalty=100 # extra penalty for page breaking after a hyphenated line
+  - \predisplaypenalty=10000 # penalty for breaking before a display
+  - \postdisplaypenalty=0 # penalty for breaking after a display
+  - \floatingpenalty = 20000 # penalty for splitting an insertion (can only be split footnote in standard LaTeX)
+  - \raggedbottom # or \flushbottom
   - \usepackage{float} # keep figures where there are in the text
   - \floatplacement{figure}{H} # keep figures where there are in the text
-  - \usepackage[T1]{fontenc}
-  - \usepackage{lmodern}
 ---
 
 # Цель работы
@@ -103,7 +104,7 @@ header-includes:
 
 Удалила файл *demo.md*, который отвечал за показ демо виджета на сайте, что подтверждает Рисунок 5 (рис. -@fig:005).
 
-![Изменение содержимого](images/6.png){#fig:006 width=70%}
+![Изменение содержимого](images/6.png){#fig:005 width=70%}
 
 ## Шаг 4
 

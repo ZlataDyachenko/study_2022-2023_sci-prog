@@ -7,24 +7,19 @@ author:
   - Дяченко З. К.
 institute:
   - Российский университет дружбы народов, Москва, Россия
-date: 15 сентября 2022
+date: 24 сентября 2022
 
-## i18n babel
-babel-lang: russian
-babel-otherlangs: english
-
-## Formatting pdf
+## Formatting
 toc: false
-toc-title: Содержание
 slide_level: 2
-aspectratio: 169
-section-titles: true
 theme: metropolis
 header-includes:
  - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
  - '\makeatletter'
  - '\beamer@ignorenonframefalse'
  - '\makeatother'
+aspectratio: 43
+section-titles: true
 ---
 
 ## Прагматика выполнения работы
